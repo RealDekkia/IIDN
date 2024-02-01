@@ -134,6 +134,13 @@ function createLetterInputBoxesFromText(txt, enabled) {
 
         charBox1.value = char;
 
+        //non-letter chars are always the same
+        const regex = /^[a-z]+$/i;
+        if (!regex.test(char)) {
+            charBox2.value = char;
+            charBox2.disabled = true;
+        }
+
         charBox2.onclick = function () {
             unfocusAll();
             charBox1.classList.add("infocus");
