@@ -98,6 +98,7 @@ function processInputData() {
 function unfocusAll() {
     Array.from(document.getElementsByTagName("input")).forEach(d => {
         d.classList.remove("infocus");
+        d.classList.remove("inSubFocus");
     });
 }
 
@@ -143,6 +144,16 @@ function createLetterInputBoxesFromText(txt, enabled) {
 
         charBox2.onfocus = function () {
             unfocusAll();
+            //search and style all boxes with the same letter
+            Array.from(document.getElementsByTagName("input")).forEach(d => {
+                if (!d.classList.contains("inputField")) {
+                    if (d.value.toUpperCase() == char.toUpperCase()) {
+                        d.classList.add("inSubFocus");
+                    }
+                }
+            });
+
+            //style for boxe above
             charBox1.classList.add("infocus");
         }
 

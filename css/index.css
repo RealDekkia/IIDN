@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+#decryptionBox .inSubFocus {
+    color: var(--code);
+}
+
 #decryptionBox input:active,
 #decryptionBox input:focus,
 #decryptionBox input:focus-visible,
