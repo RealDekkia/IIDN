@@ -141,7 +141,7 @@ function createLetterInputBoxesFromText(txt, enabled) {
             charBox2.disabled = true;
         }
 
-        charBox2.onclick = function () {
+        charBox2.onfocus = function () {
             unfocusAll();
             charBox1.classList.add("infocus");
         }
