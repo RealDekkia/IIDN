@@ -1,0 +1,12 @@
+#decryptionBox input {
+    width: 2.5rem;
+    text-align: center;
+}
+
+#decryptionBox input:active,
+#decryptionBox input:focus,
+#decryptionBox input:focus-visible,
+#decryptionBox .infocus {
+    background-color: var(--text);
+    color: var(--bg);
+}
