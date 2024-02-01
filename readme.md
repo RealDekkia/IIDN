@@ -9,3 +9,7 @@ This could be done on a piece of paper (or in a notepad) with a bit more time-in
 This tool could also be used for educational stuff if you wanted to.
 
 I even made a subdomain for it: https://paper.doesnotcut.it
+
+
+
+https://www.improbableisland.com/support.php
