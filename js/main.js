@@ -139,7 +139,7 @@ function createLetterInputBoxesFromText(txt, enabled) {
             charBox1.classList.add("infocus");
         }
 
-        charBox2.onchange = function () {
+        charBox2.oninput = function () {
             charLookup[char.toUpperCase()] = charBox2.value;
             updateInputsFromCharLookup();
         }
